@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>UFO Busters: Alien Alert Form</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/2col-responsive.css" media="screen">
+    <link rel="shortcut icon" type="image/x-icon" href="images/smallufo.gif">
+    
+<style type="text/css">
+table { border-collapse:collapse;
+border: none; padding: .1em;}
+label {font-size: .8em;
+		 color: #C03; width: 95%; font-weight: bold;}
+input {display: block; height: 1.6em;}
+fieldset { border: solid maroon 1px; 
+		   border-radius: 15px;
+           width: 95%;
+		   padding: .3em;
+		   margin: 1em; clear:both;}
+legend { font-size: 1em;
+		font-weight: bold;
+		 color: maroon;}
+textarea { width: 90%;
+           height: 10em;}
+td textarea { vertical-align:top;}
+input[type="text"] { width: 95%;}
+select {width: 95%; height: 1.6em;}
+input[type="submit"], 
+input[type="reset"] {border: outset .5em maroon;
+                     height: 4em; width: 18em;
+					 margin: .3em .3em .3em 1.5em;
+					 padding: .1em;
+					background-color: silver; float:left; display: inline-block;
+					font-size: 1em;
+					font-weight: bold;}
+
+input:focus, textarea:focus { background-color:#9FF;}
+#wrapper {width: 95%;
+           margin: 0 auto 0 auto;} /* TRouBLe: Top Right Bottom Left*/
+
+/* tablet screen dropoff *******/  
+
+@media only screen and (max-width: 768px) { 
+textarea { height: 10em;}
+
+}
+
+
+/* iPhone Landscape ********/  
+
+@media only screen and (max-width: 480px) {  
+textarea { height: 15em;}
+}   
+
+</style>
+</head>
+<body>
+	
+			
+	<div class="header"><div class="inner">
+		<div class="wrapper">	
+        <img src="images/alienalert.png" width="800" height="125" alt="Alien Alert Form" class="resize"> </div>
+	</div></div>
+
+	<div class="wrapper">
+
+		<div class="subnav">
+			<h2>Navigation</h2>
+			<ul class="nav">
+            	<li><a href="index.html">Homepage</a></li>
+				<li><a href="contact.html">Contact Us</a></li>
+				<li><a href="form.html">Alien Alert Form</a></li>
+				<li><a href="need.html">Do You Need Us?</a></li>
+				<li><a href="calendar.html">Calendar</a></li>
+			</ul>
+
+		</div>
+		
+		<div class="main">
+   <!-- Insert Form Action Here --> 
+   <!-- Start Fieldset --> 
+   <!-- Start First Legend "Tell Us About Yourself" -->   
+        
+	
+    
+    <table width="95%">
+  <tr>
+    <td></td><!-- Name label-->
+    <td></td><!-- Name input-->
+    <td></td><!-- Email label-->
+    <td></td><!-- Email input-->
+  </tr>
+  <tr>
+    <td></td><!-- Phone Label-->
+    <td></td><!-- Phone Input-->
+    <td></td><!--I am a(n) Label-->
+    <td></td><!-- Select List-->
+  </tr>
+</table>
+  <!-- End first fieldset-->
+  
+  <!--Start next fieldset-->
+    <!-- Start Legend "Alien Encounter"-->
+
+    
+    <table width="95%">
+  <tr>
+    <td></td><!-- Describe Label-->
+    <td colspan="2"></td><!-- Alien Type Label-->
+    </tr>
+  <tr>
+    <td rowspan="6"></td><!-- Textarea Describe Encounter -->
+    <td></td><!-- Radio Input Greys-->
+    <td></td>
+  </tr>
+  <tr>
+    <td></td><!-- Radio Input Ewok-->
+    <td></td>
+  </tr>
+  <tr>
+    <td></td><!--Radio input Insectoid-->
+    <td></td>
+  </tr>
+  <tr>
+    <td></td><!--Radio Input Cthulu-->
+    <td></td>
+  </tr>
+  <tr>
+    <td></td><!--Radio Input Klingon-->
+    <td></td>
+  </tr>
+  <tr>
+    <td></td><!-- Radio Input Other-->
+    <td></td>
+  </tr>
+</table>
+
+<!-- End fieldset -->
+  
+<!--Start fieldset-->
+    <!--Legend "Action"-->
+    
+    <table width="95%">
+  <tr>
+    <td colspan="2"></td><!-- Label "What Would You Like Done?"-->
+    </tr>
+  <tr>
+    <td></td><!-- Checkbox Deport to Mars-->
+    <td></td>
+  </tr>
+  <tr>
+    <td></td><!-- Checkbox Return them to their Planet-->
+    <td></td>
+  </tr>
+  <tr>
+    <td></td><!-- Checkbox Metallic Implants up their Noses-->
+    <td></td>
+  </tr>
+  <tr>
+    <td></td><!-- Checkbox Bizarre physical exam-->
+    <td></td>
+  </tr>
+</table>
+
+<!--End fieldset-->
+
+<!--Submit and Reset Buttons-->
+
+
+<!-- Hidden input fields-->
+
+  
+<!--End form tag-->
+
+
+		</div>
+	
+	<div class="footer">
+		<div class="wrapper">
+			<p class="copy">Copyright &copy; 2015: UFO Busters. This is a ficitious website. Don't believe everything you read online.</p>
+        <div class="leftfoot">
+            <p><b>UFO Busters</b></p>
+            <div>
+              114 North Main Street<br>
+              Roswell, NM 88203<br>
+              <a href="mailto:test@example.com">
+              ufo@busters.com</a><br>
+              (575) 555-1212<br>
+            </div>
+          </div>
+		</div>
+	</div>
+</body>
+</html>

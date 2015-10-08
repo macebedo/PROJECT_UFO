@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>UFO Busters: Do You Need Us?</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+     <link rel="shortcut icon" type="image/x-icon" href="images/smallufo.gif">
+	<link rel="stylesheet" href="css/2col-responsive.css" media="screen">
+
+<style type="text/css">
+.ufo {list-style-image: url('images/smallufo.gif'); }
+.subnav { margin-bottom: 3em;}
+</style>
+
+<!-- This script is used to swap out the regular UFO image and replace it with UFO that has been striked out -->
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+
+</head>
+<body onLoad="MM_preloadImages('images/ufoicon2.gif')">
+			
+	<div class="header"><div class="inner">
+		<div class="wrapper">	
+        <img src="images/need.png" width="540" height="125" alt="Do You Need UFO Busters?" class="resize"> </div>
+	</div></div>
+
+	<div class="wrapper">
+
+		<div class="subnav">
+			<h2>Navigation</h2>
+			<ul class="nav">
+            	<li><a href="index.html">Homepage</a></li>
+				<li><a href="contact.html">Contact Us</a></li>
+				<li><a href="form.html">Alien Alert Form</a></li>
+				<li><a href="need.html">Do You Need Us?</a></li>
+				<li><a href="calendar.html">Calendar</a></li>
+			</ul>
+
+		</div>
+		
+		<div class="main">
+			<h2>Does this describe your situation?</h2>
+              <a href="contact.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Bust an Alien','','images/ufoicon2.gif',1)">
+              <img src="images/ufoicon1.gif" alt="UFO Icon" width="126" height="119" id="Bust an Alien" class="floatright"></a>
+              <ul class="ufo">
+                <li>Tired of aliens landing in your backyard?</li>
+                  <li>Don't you wish they would abduct someone else for a change?</li>
+                  <li>Annoyed by those glaring, flashing lights at 2AM?</li>
+                  <li>Sick of those embarrassing physical exams?</li>
+              </ul>
+              <h2>Then you need UFO Busters to rid you of those pesky aliens!<br>
+              It's Time to 'Bust an Alien'!</h2>
+
+		</div>
+	
+	<div class="footer">
+		<div class="wrapper">
+			<p class="copy">Copyright &copy; 2015: UFO Busters. This is a ficitious website. Don't believe everything you read online.</p>
+        <div class="leftfoot">
+            <p><b>UFO Busters</b></p>
+            <div>
+              114 North Main Street<br>
+              Roswell, NM 88203<br>
+              <a href="mailto:test@example.com">
+              ufo@busters.com</a><br>
+              (575) 555-1212<br>
+            </div>
+          </div>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>UFO Busters: Alien Alert Form</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/2col-responsive.css" media="screen">
+    <link rel="shortcut icon" type="image/x-icon" href="images/smallufo.gif">
+    
+<style type="text/css">
+table { border-collapse:collapse;
+border: none; padding: .1em;}
+label {font-size: .8em;
+		 color: #C03; width: 95%; font-weight: bold;}
+input {display: block; height: 1.6em;}
+fieldset { border: solid maroon 1px; 
+		   border-radius: 15px;
+           width: 95%;
+		   padding: .3em;
+		   margin: 1em; clear:both;}
+legend { font-size: 1em;
+		font-weight: bold;
+		 color: maroon;}
+textarea { width: 90%;
+           height: 10em;}
+td textarea { vertical-align:top;}
+input[type="text"] { width: 95%;}
+select {width: 95%; height: 1.6em;}
+input[type="submit"], 
+input[type="reset"] {border: outset .5em maroon;
+                     height: 4em; width: 18em;
+					 margin: .3em .3em .3em 1.5em;
+					 padding: .1em;
+					background-color: silver; float:left; display: inline-block;
+					font-size: 1em;
+					font-weight: bold;}
+
+input:focus, textarea:focus { background-color:#9FF;}
+#wrapper {width: 95%;
+           margin: 0 auto 0 auto;} /* TRouBLe: Top Right Bottom Left*/
+
+/* tablet screen dropoff *******/  
+
+@media only screen and (max-width: 768px) { 
+textarea { height: 10em;}
+
+}
+
+
+/* iPhone Landscape ********/  
+
+@media only screen and (max-width: 480px) {  
+textarea { height: 15em;}
+}   
+
+</style>
+</head>
+<body>
+	
+			
+	<div class="header"><div class="inner">
+		<div class="wrapper">	
+        <img src="images/alienalert.png" width="800" height="125" alt="Alien Alert Form" class="resize"> </div>
+	</div></div>
+
+	<div class="wrapper">
+
+		<div class="subnav">
+			<h2>Navigation</h2>
+			<ul class="nav">
+            	<li><a href="index.html">Homepage</a></li>
+				<li><a href="contact.html">Contact Us</a></li>
+				<li><a href="form.html">Alien Alert Form</a></li>
+				<li><a href="need.html">Do You Need Us?</a></li>
+				<li><a href="calendar.html">Calendar</a></li>
+			</ul>
+
+		</div>
+		
+		<div class="main">
+<form action="http://www.galadrielconsulting.com/cgi-bin/formmail.cgi" method="post">
+  <fieldset>
+    <legend>Tell Us About Yourself</legend>
+    
+ <table width="95%">
+  <tr>
+    <td><label for="name">Name:</label></td>
+    <td><input type="text" placeholder="First Name and Last Name" name="name" id="name"></td>
+    <td><label for="email">E-Mail:</label></td>
+    <td><input type="text" name="email" id="email"></td>
+  </tr>
+  <tr>
+    <td><label for="phone">Phone:</label></td>
+    <td><input type="text" placeholder="321-555-1212" name="tel" id="phone"></td>
+    <td><label for="type">I am a(n):</label></td>
+    <td><select name="type" id="type">
+          <option> Insomniac</option>
+          <option> Normal/Sane Person</option>
+          <option> Habitual Psychedelic Drug User</option>
+          <option> Batman!</option>
+          <option> Trekkie</option>
+          <option> Extra-Terrestrial</option>
+    	</select>
+     </td>
+  </tr>
+</table>
+  </fieldset>
+  
+    <fieldset>
+    <legend>Alien Encounter</legend>
+    
+    <table width="95%">
+  <tr>
+    <td><label for="describe">Describe Your Encounter:</label></td>
+    <td colspan="2"><label for="alien">Alien Type:</label></td>
+    </tr>
+  <tr>
+    <td rowspan="6"><textarea placeholder="Describe your encounter..." name="describe" id="describe"></textarea></td>
+    <td><input type="radio" name="alien" value="Greys"></td>
+    <td>Greys</td>
+  </tr>
+  <tr>
+    <td><input type="radio" name="alien" value="Ewok"></td>
+    <td>Ewok</td>
+  </tr>
+  <tr>
+    <td><input type="radio" name="alien" value="Insectoid"></td>
+    <td>Insectoid</td>
+  </tr>
+  <tr>
+    <td><input type="radio" name="alien" value="Cthulu"></td>
+    <td>Star-Spawn of Cthulu</td>
+  </tr>
+  <tr>
+    <td><input type="radio" name="alien" value="Klingon"></td>
+    <td>Klingon</td>
+  </tr>
+  <tr>
+    <td><input type="radio" name="alien" value="Other..."></td>
+    <td>Other...</td>
+  </tr>
+</table>
+
+  </fieldset>
+  
+  <fieldset>
+    <legend>Action</legend>
+    
+    <table width="95%">
+  <tr>
+    <td colspan="2"><label for="done">What Would You Like Done?:</label></td>
+    </tr>
+  <tr>
+    <td><input type="checkbox" name="done" value="Deportation to Mars"></td>
+    <td>Deportation to Mars</td>
+  </tr>
+  <tr>
+    <td><input type="checkbox" name="done" value="Return them to their Planet"></td>
+    <td>Return them to their Planet, with over Two Hours Unaccounted for</td>
+  </tr>
+  <tr>
+    <td><input type="checkbox" name="done" value="Metallic Implants up their Noses"></td>
+    <td>Shove Metallic Implants up their Noses</td>
+  </tr>
+  <tr>
+    <td><input type="checkbox" name="done" value="Bizarre physical exam"></td>
+    <td>Give them a bizarre physical exam and see how they like it!</td>
+  </tr>
+</table>
+</fieldset>
+
+ <input type="submit" > <input type="reset" value="I'm Sober Now, Forget About It!" >
+
+
+<input type="hidden" name="recipient" value="youremail@address.com">
+<input type="hidden" name="subject" value="Alien Alert Submission">
+<input type="hidden" name="title" value="Thank You For Your Alien Alert Request!">
+<input type="hidden" name="bgcolor" value="FCFFFF">
+<input type="hidden" name="sort" value="order:name,email,tel,type,describe,alien,done">
+<input type="hidden" name="return_link_title" value="Back">
+<input type="hidden" name="return_link_url" value="http://www.galadrielconsulting.com/ufo/form.html">
+
+  
+</form>
+
+
+		</div>
+	
+	<div class="footer">
+		<div class="wrapper">
+			<p class="copy">Copyright &copy; 2015: UFO Busters. This is a ficitious website. Don't believe everything you read online.</p>
+        <div class="leftfoot">
+            <p><b>UFO Busters</b></p>
+            <div>
+              114 North Main Street<br>
+              Roswell, NM 88203<br>
+              <a href="mailto:test@example.com">
+              ufo@busters.com</a><br>
+              (575) 555-1212<br>
+            </div>
+          </div>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Exercise: Accessible Tables</title>
+
+<style type="text/css">
+
+table { border: 3px outset black;
+        margin: .5em;
+		background-color: silver;}
+		
+td, th {  border: 1px solid black;
+ padding: .5em;
+ border-collapse:collapse;}
+
+tr:hover { background-color: coral;}
+
+</style>
+</head>
+<body>
+<h1>Accessible Tables</h1>
+
+<table>   
+  <tr>    
+    <th></th>     
+    <th>9am</th>   <!-- Add id="1" -->  
+    <th>10am</th>  <!-- Add id="2" -->   
+    <th>11am</th>  <!-- Add id="3" -->  
+    <th>12am</th>  <!-- Add id="4" -->
+  </tr>   
+  <tr>     
+    <td>Monday</td>
+    <td colspan="2">US History</td>     <!-- Add headers="2"-->
+    <td>English 101</td>    <!-- Add headers="3"--> 
+    <td>Programming 101</td>   <!-- Add headers="4"-->
+  </tr>   
+  <tr>     
+    <td>Tuesday</td>     
+    <td colspan="3">Physics</td>   <!-- Add headers="1"--> 
+    <td>Calculus</td>   <!-- Add headers="4"-->
+  </tr> 
+</table>
+
+</body>
+</html>

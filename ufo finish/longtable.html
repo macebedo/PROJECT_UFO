@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Exercise: Managing Large HTML Tables</title>
+<!--
+	Exercise Topics:
+	* table grouping with tfoot
+	* use of the colgroup element
+	* setting classes with the col element
+-->
+<style type="text/css">
+
+table { border: 3px solid grey;
+        margin: .5em;}
+		
+td {  text-align: right;}
+td, th { padding: .5em;}
+
+thead { background-color: khaki;}
+tfoot {background-color: darksalmon;}
+
+tr:hover { background-color: silver;}
+
+.firstcol { background-color: coral;
+            width: 15em;}
+.midcols { background-color: gold;
+           width: 7em;}
+.total { background-color: burlywood;
+		 width: 9em;}
+</style>
+</head>
+<body>
+<h1>Managing Large HTML Tables</h1>
+
+<table>
+
+  <colgroup>
+    <col class="firstcol">
+    <col class="midcols">
+    <col class="midcols">
+    <col class="midcols">
+    <col class="midcols">
+    <col class="midcols">
+    <col class="total">
+  </colgroup>
+
+ <thead>
+  
+  <tr>
+     <th rowspan="2"> UFO Buster's Expenses</th>
+     <th colspan="3">Los Angeles</th>
+     <th colspan="2">San Francisco</th>
+     <th rowspan="2">Totals</th>
+  </tr>
+  
+	  <tr>
+  		<!-- Delete this th once you add the rowspan-->
+  		<th>Sat</th>
+  		<th>Sun</th>
+  		<th>Mon</th>
+  		<th>Tue</th>
+  		<th>Wed</th>
+  		<!-- Delete this th once you add the rowspan-->
+	  </tr>
+      
+  </thead>    
+      
+	  <tr>
+  		<th>P.K.E. Meter</th>
+  		<td>350.00</td>
+  		<td>&nbsp;</td>
+  		<td>&nbsp;</td>
+  		<td>&nbsp;</td>
+  		<td>&nbsp;</td>
+  		<td><strong>350.00</strong></td>
+   </tr>
+	  <tr>
+  		<th>Proton Pack </th>
+  		<td>48.00</td>
+  		<td>48.00</td>
+  		<td>48.00</td>
+  		<td>48.00</td>
+  		<td>48.00</td>
+  		<td><strong>240.00</strong></td>
+	  </tr>
+	  <tr>
+  		<th>Particle Thrower</th>
+  		<td>15.00</td>
+  		<td>15.00</td>
+  		<td>25.00</td>
+  		<td>10.00</td>
+  		<td>10.00</td>
+  		<td><strong>75.00</strong></td>
+	  </tr>
+	  <tr>
+  		<th>Nuclear Recharging</th>
+  		<td>5.00</td>
+  		<td>18.00</td>
+  		<td>12.00</td>
+  		<td>5.00</td>
+  		<td>5.00</td>
+  		<td><strong>45.00</strong></td>
+	  </tr>
+	  <tr>
+  		<th>Composite Particle System</th>
+  		<td>7.50</td>
+  		<td>7.50</td>
+  		<td>11.00</td>
+  		<td>8.00</td>
+  		<td>8.00</td>
+  		<td><strong>42.00</strong></td>
+	  </tr>
+	  <tr>
+  		<th>Alien Probe Stick</th>
+  		<td>9.50</td>
+  		<td>25.00</td>
+  		<td>12.00</td>
+  		<td>13.27</td>
+  		<td>15.11</td>
+  		<td><strong>74.88</strong></td>
+	  </tr>
+	  <tr>
+  		<th>Ectoplasmic Disintegrator</th>
+  		<td>22.50</td>
+  		<td>31.28</td>
+  		<td>12.22</td>
+  		<td>25.00</td>
+  		<td>28.27</td>
+  		<td><strong>119.27</strong></td>
+	  </tr>
+	  <tr>
+  		<th>Atomic Destabilizer</th>
+  		<td>&nbsp;</td>
+  		<td>&nbsp;</td>
+  		<td>23.00</td>
+  		<td>&nbsp;</td>
+  		<td>&nbsp;</td>
+  		<td><strong>23.00</strong></td>
+	  </tr>
+	  <tr>
+  		<th>Liquid Oxygen Dispenser Unit</th>
+  		<td>99.00</td>
+  		<td>99.00</td>
+  		<td>99.00</td>
+  		<td>110.00</td>
+  		<td>110.00</td>
+  		<td><strong>517.00</strong></td>
+	  </tr>
+	  <tr>
+  		<th>Boson Pack</th>
+  		<td>&nbsp;</td>
+  		<td>&nbsp;</td>
+  		<td>&nbsp;</td>
+  		<td>&nbsp;</td>
+  		<td>&nbsp;</td>
+  		<td>&nbsp;</td>
+	  </tr>
+	  <tr>
+  		<th>Fusion Blast Adapter</th>
+  		<td>5.00</td>
+  		<td>5.00</td>
+  		<td>5.00</td>
+  		<td>4.50</td>
+  		<td>4.50</td>
+  		<td><strong>24.00</strong></td>
+	  </tr>
+	  <tr>
+  		<th>Mass Containment Field</th>
+  		<td>&nbsp;</td>
+  		<td>&nbsp;</td>
+  		<td>&nbsp;</td>
+  		<td>&nbsp;</td>
+  		<td>&nbsp;</td>
+  		<td>&nbsp;</td>
+	  </tr>
+	  <tr>
+  		<th>Molecular Phase Amplifier</th>
+  		<td>&nbsp;</td>
+  		<td>&nbsp;</td>
+  		<td>&nbsp;</td>
+  		<td>&nbsp;</td>
+  		<td>&nbsp;</td>
+  		<td>&nbsp;</td>
+	  </tr>
+	  <tr>
+  		<th>Dark Matter Generator</th>
+  		<td>160.00</td>
+  		<td>&nbsp;</td>
+  		<td>&nbsp;</td>
+  		<td>&nbsp;</td>
+  		<td>&nbsp;</td>
+  		<td><strong>160.00</strong></td>
+	  </tr>
+	  <tr>
+  		<th>Ecto Defibrillator</th>
+  		<td>&nbsp;</td>
+  		<td>&nbsp;</td>
+  		<td>&nbsp;</td>
+  		<td>&nbsp;</td>
+  		<td>&nbsp;</td>
+  		<td>&nbsp;</td>
+	  </tr>
+	  <tr>
+  		<th>Misc</th>
+  		<td>&nbsp;</td>
+  		<td>&nbsp;</td>
+  		<td>&nbsp;</td>
+  		<td>&nbsp;</td>
+  		<td>&nbsp;</td>
+  		<td>&nbsp;</td>
+	  </tr>
+<tfoot>
+	  <tr>
+  		<th>Daily Totals </th>
+  		<td><strong>721.50</strong></td>
+  		<td><strong>248.78</strong></td>
+  		<td><strong>247.22</strong></td>
+  		<td><strong>223.77</strong></td>
+  		<td><strong>228.88</strong></td>
+  		<td><strong>1670.15</strong></td>
+	  </tr>
+</tfoot>
+</table>
+</body>
+</html>
